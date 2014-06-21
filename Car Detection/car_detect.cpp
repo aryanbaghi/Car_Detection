@@ -201,7 +201,6 @@ int main( int argc, const char** argv )
     Mat image1 = imread(argv[1],1);
 	Mat image;
 	resize(image1,image,Size(300,150),0,0,INTER_LINEAR);        //resizing image to get best experimental results
-	resize(image1,image,Size(400,150),0,0,INTER_LINEAR);        //resizing image to 
 	cars detectcars;                      //creating a object
 
 	
@@ -233,7 +232,7 @@ int main( int argc, const char** argv )
 	}
 	else
 	{
-		//cout << endl << "cars not found" << endl;
+		cout << endl << "cars not found" << endl;
 	}
 	
 	detectcars.display_output();          //displaying the final result
